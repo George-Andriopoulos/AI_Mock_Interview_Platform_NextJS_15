@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
@@ -8,8 +9,8 @@ import {
 	getFeedbackByInterviewId,
 	getInterviewById,
 } from "@/lib/actions/general.action";
-import { getCurrentUser } from "@/lib/actions/auth.action";
 import DisplayTechIcons from "@/components/DisplayTechIcons";
+import { getCurrentUser } from "@/lib/actions/auth.actions";
 
 const InterviewDetails = async ({ params }: RouteParams) => {
 	const { id } = await params;
