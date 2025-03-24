@@ -23,7 +23,7 @@ const InterviewCard = async ({
 					userId,
 			  })
 			: null;
-
+	// /coment
 	const normalizedType = /mix/gi.test(type) ? "Mixed" : type;
 
 	const badgeColor =
